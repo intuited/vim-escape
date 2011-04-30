@@ -5,7 +5,7 @@
 
 " Assert the presence of an even number (including 0) of '\' characters
 " before what follows.
-let escape#unescaped = '\m\(\\\@<!\(\\\\\)*\)\@<='
+let escape#unescaped = '\m\%(\\\@<!\%(\\\\\)*\)\@<='
 
 " Splits a:line on unescaped occurrences of a:target.
 function! escape#SplitOnUnescaped(line, target)
